@@ -1,0 +1,276 @@
+<html>
+
+<head>
+
+<title>E-RENTING</title>
+
+<link href="css/style.css" rel="stylesheet" />
+
+<style type="text/css">
+
+body {
+background-image: url('assets/img/header-bg.jpg');
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: center center;
+background-size: cover;
+}
+
+</style>
+
+</head>
+
+<nav>
+     	<div class="logo">
+		<h4 align="center">E-RENTING</h4>
+     	</div>
+
+     <ul class="nav-links">
+     	<li>
+     		<a href="homepageGuest.html">HOME     </a>
+     		<a href="aboutGuest.html">ABOUT    </a>
+  		<a href="contactGuest.html">CONTACT     </a>
+		<a href="index.html">LOGOUT     </a>
+     	</li>
+     </ul>
+</nav
+
+<hr>
+
+<font face='Zamenhof Outline' size="6" color="#fed136"><h1 align="center">Booking</h1></font>
+<form name="form" method="POST" action="addBooking.php">
+<fieldset>
+<legend align="center"><font face="Futura" size="6" color="white"> Choose Your Payment Method </font></legend>
+
+<br>
+</br>
+
+<table align="center">
+<tr>
+    <td><font color="white">Name of Programme: </font></td>
+    <td><input name="programme" type="text" maxlength="50" size="40" required></td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Name of Applicant: </font></td>
+    <td><input name="applicant" type="text" maxlength="50" size="40" required></td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white"><label for="date">Date:</label></font></td>
+    <td><input type="date" id="date" name="date"></td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Gender: </font></td>
+    <td><input checked="checked" type="radio" name="gender" value="MALE"><font color="white">Male</font></td>
+</tr>
+<tr>
+    <td></td>
+    <td><input type="radio" name="gender" value="FEMALE"><font color="white">Female</font></td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Category: </font></td>
+    <td>
+    <select name="usertype" length="50">
+    <option value="">--SELECT--</option>
+    <br>
+    <option value="STUDENT">STUDENT</option>
+    <br>
+    <option value="RESIDENT">RESIDENT</option>
+    <br>
+    <option value="OUTSIDER">OUTSIDER</option>
+    <br>
+    </select>
+    </td>
+</tr>
+
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Facilities: </font></td>
+    <td>
+    <select name="facility">
+    <option value="">--SELECT FACILITY--</option>
+    <br>
+    <option value="BASKETBALL COURT (RM10.60)">BASKETBALL COURT (RM10.60)</option>
+    <br>
+    <option value="RACETRACK STADIUM (RM500)">RACETRACK STADIUM (RM500)</option>
+    <br>
+    <option value="TENNIS COURT (RM10.60)">TENNIS COURT (RM10.60)</option>
+    <br>
+    <option value="HOCKEY AND NETBALL (RM53)">HOCKEY AND NETBALL (RM53)</option>
+    <br>
+    <option value="HANDBALL AND FUTSAL (RM31.80)">HANDBALL AND FUTSAL (RM31.80)</option>
+    <br>
+    <option value="SOFTBALL (RM84.80)">SOFTBALL (RM84.80)</option>
+    <br>
+    <option value="PETANQUE (RM53)">PETANQUE (RM53)</option>
+    <br>
+    <option value="MEETING ROOM (RM53)">MEETING ROOM (RM53)</option>
+    <br>
+    <option value="WOODBALL FIELD (RM79.50)">WOODBALL FIELD (RM79.50)</option>
+    <br>
+    <option value="STADIUM (RM500)">STADIUM (RM500)</option>
+    <br>
+    <option value="SYNTHETIC TRACK (RM630)">SYNTHETIC TRACK (RM630)</option>
+    <br>
+    <option value="PADANG RANI (RM100)">PADANG RANI (RM100)</option>
+    <br>
+    <option value="PADANG JATI (RM50)">PADANG JATI (RM50)</option>
+    <br>
+    <option value="VOLLEYBALL COURT BERINGIN (RM20)">VOLLEYBALL COURT BERINGIN (RM20)</option>
+    <br>
+    <option value="BADMINTON (RM10.60)">BADMINTON (RM10.60)</option>
+    <br>
+    <option value="SEPAK TAKRAW INDOOR (RM10.60">SEPAK TAKRAW INDOOR (RM10.60)</option>
+    <br>
+    <option value="SEPAK TAKRAW OUTDOOR (RM20)">SEPAK TAKRAW OUTDOOR (RM20)</option>
+    <br>
+    <option value="SKUASY (RM30)">SKUASY (RM30)</option>
+    <br>
+    <option value="PING PONG (RM10)">PING PONG (RM10)</option>
+    <br>
+    <option value="PADANG RUSA (RM15)">PADANG RUSA (RM15)</option>
+    <br>
+    </select>
+    </td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Item: </font></td>
+    <td>
+    <select name="inventory">
+    <option value="">--SELECT INVENTORY--</option>
+    <br>
+    <option value="BADMINTON RACKET (RM20)">BADMINTON RACKET (RM20)</option>
+    <br>
+    <option value="SHUTTLECOCK (RM10)">SHUTTLECOCK (RM10)</option>
+    <br>
+    <option value="TENNIS RACKET (RM26)">TENNIS RACKET (RM26)</option>
+    <br>
+    <option value="TENNIS BALL (RM16)">TENNIS BALL (RM16)</option>
+    <br>
+    <option value="RUGBY BALL (RM20)">RUGBY BALL (RM20)</option>
+    <br>
+    <option value="FOOTBALL (RM20)">FOOTBALL (RM20)</option>
+    <br>
+    <option value="TAKRAW (RM15)">TAKRAW (RM15)</option>
+    <br>
+    <option value="FUTSAL (RM18)">FUTSAL (RM18)</option>
+    <br>
+    <option value="VOLLEYBALL (RM18)">VOLLEYBALL (RM18)</option>
+    <br>
+    <option value="WOODBALL HAMMER (RM14)">WOODBALL HAMMER (RM14)</option>
+    <br>
+    <option value="BADMINTON NET RM(8)">BADMINTON NET RM(8)</option>
+    <br>
+    <option value="BASKETBALL (RM17)">BASKETBALL (RM17)</option>
+    <br>
+    <option value="NETBALL (RM10)">NETBALL (RM10)</option>
+    <br>
+    <option value="FRISBEE (RM7)">FRISBEE (RM7)</option>
+    <br>
+    </select>
+    </td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Telephone: </font></td>
+    <td><input name="telephone" type="text" size="40" required></td>
+</tr>
+<tr>
+    <td></td>
+    <td><font color="white">Note: Without"-"</font></td>
+</tr>
+
+<tr><td></td></tr>
+
+<tr>
+    <td><font color="white">Total Charge: </font></td>
+    <td><input name="totalCharge" type="text" maxlength="50" size="40" required></td>
+</tr>
+<tr>
+    <td></td>
+    <td><font color="white">Note: Enter the right total</font></td>
+</tr>
+<tr>
+    <td></td>
+    <td><font color="white">Note: For Student, just enter RM0</font></td>
+</tr>
+
+<tr><td></td></tr>
+
+</table>
+<center>
+<p>
+<center><input type="reset" name="Reset" value="Reset">
+<input type="submit" name="booked" value="Book Now">
+</center>
+
+<br>
+</br>
+
+</fieldset>
+</form></font>
+
+<br>
+</br>
+
+<hr>
+
+<div class="footer">
+<center>
+<font face='damages' color="white" size='5'><a href=booking.html> Booking </a></font>
+<font color='black'><pre>
+Facility
+Inventory
+
+
+
+
+</pre>
+</center>
+</div>
+
+<div class="footer">
+<center>
+<font face='damages' color="white" size='5'><a href=aboutGuest.html> About </a></font>
+<font color='black'><pre>
+Introduction
+Mission
+Vision
+
+
+Copyright Sport Complex
+</pre></hl></font>
+</center>
+</div>
+
+<div class="footer">
+<center>
+<font face='damages' color="white" size='5'><a href=contactGuest.html> Contact </a></font>
+<font color='black'><pre>
+Phone Number: 
+04-9882415
+Fax Number:
+04-9882412
+
+
+</pre></hl></font>
+</center>
+</div>
