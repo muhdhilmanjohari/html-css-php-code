@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+ } 
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 30px;
+}
+
+ul li{
+	display: inline-block;
+
+}
+
+ul li a{
+
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+	font-family: "Roboto";
+
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+ul li.active a{
+	color: #white;
+}
+
+
+
+
+
+.main{
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    width: 100%;  /* i'm assuming full width */
+    height: 80px; /* change it to desired width */
+    background-color: grey; /* change to desired color */
+}
+
+.container{
+
+	margin: 10px 50px;
+	text-align: center;
+	width: 100%;
+	max-width: 800px;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-left: 680px;
+	margin-top: 280px;
+}
+
+.container .formBox{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.container .formBox form{
+	position: relative;
+	width: 100%;
+	padding: 0 0 0 75px;
+
+}
+
+
+.container .formBox form h2{
+	color: #fff;
+	font-weight: 1000;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+.container .formBox form .inputBox{
+	position: relative;
+	margin-bottom: 40px;
+
+}
+
+.container .formBox form .inputBox:last-child{
+
+	margin-bottom: 0px;
+}
+
+.container .formBox form .inputBox input,
+.container .formBox form .inputBox textarea{
+	position: relative;
+	background: transparent;
+	outline: none;
+	border: none;
+	width: 100%;
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	border-bottom: 2px solid rgba(255,255,255,0.5);
+	resize: none;
+	margin: 0;
+
+}
+
+
+.container .formBox form .inputBox textarea{
+	height: 100px;
+
+}
+
+.container .formBox form .inputBox input[type="submit"]{
+	padding: 8px 20px;
+	margin-top: 0;
+	margin-left: 20;
+	width: 150px;
+	cursor: pointer;
+	background: #ff5064;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	align-items: center;
+}
+
+.container .formBox form .inputBox input[type="submit"]:focus{
+	background: #fff;
+	color: #000;
+
+
+}
+
+.container .formBox form .inputBox span{
+	position: absolute;
+	left: 0;
+	font-size: 18px;
+	font-weight: 500;
+	display: inline-block;
+	pointer-events: none;
+	letter-spacing: 1px;
+	color: 	#dcdcdc;
+	transition:  .5s;
+	margin-top: -25;
+}
+
+
+.container .formBox form .inputBox input:focus ~ span,
+.container .formBox form .inputBox textarea: focus ~ span{
+
+	margin:-12px;
+	color:#ff5064;
+}
+
+.container .formBox form .inputBox input:focus ,
+.container .formBox form .inputBox textarea: focus ,
+.container .formBox form .inputBox input:valid ,
+.container .formBox form .inputBox textarea: valid{
+	border-bottom-color: #fff;
+
+}
+
+.container .imgBox{
+	position: relative;
+	width: 50%;
+	height:100%;
+	overflow: hidden;
+
+}
+
+
+.container .imgBox img{
+	position: absolute;
+	bottom:0;
+	max-height: 100%;
+	margin-left: -150px;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+}

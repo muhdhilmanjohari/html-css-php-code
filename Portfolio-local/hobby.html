@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<title> MY PORTFOLIO </title>
+<link rel ="stylesheet" type ="text/css" href ="stylehobby.css">
+<script type="text/javascript">
+        var IdealTimeOut = 60; //60 seconds
+        var idleSecondsTimer = null;
+        var idleSecondsCounter = 0;
+        document.onclick = function () { idleSecondsCounter = 0; };
+        document.onmousemove = function () { idleSecondsCounter = 0; };
+        document.onkeypress = function () { idleSecondsCounter = 0; };
+        document.onscroll = function () { idleSecondsCounter = 0; };
+        idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+ 
+        function CheckIdleTime() {
+            idleSecondsCounter++;
+            var oPanel = document.getElementById("timeOut");
+            if (oPanel) {
+                oPanel.innerHTML = (IdealTimeOut - idleSecondsCounter);
+            }
+            if (idleSecondsCounter >= IdealTimeOut) {
+                window.clearInterval(idleSecondsTimer);
+                alert("Your Session has expired. Please login again.");
+                window.location = "login1.php";
+                window.location = "index.html";
+            }
+        }
+        </script>
+<style>
+body {
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('hobby.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <div class ="main">
+      <a href="index1.html">
+      <img class ="logo" src="logo1.png">
+    </a>
+      <ul>
+        <li class="active"><a href = "index1.html">HOMEPAGE</a></li>
+        <li class="active"><a href = "about.html">ABOUT</a></li>
+        <li class="active"><a href = "resume.html">RESUME & ACHIEVEMENT</a></li>
+        <li class="active"><a href = "contact.html">CONTACT</a></li>
+        <li class="active"><a href = "hobby.html">HOBBY</a></li>
+        <li class="active"><a href = "restable.html">RESUME</a></li>
+        <li class="active"><a href = "timetable.html">TIME TABLE</a></li>
+        <li class="active"><a href = "logout.php">LOG OUT</a></li>
+      </ul>
+    </div>
+    <div class="title">
+      <br></br>
+      <h1>My Hobby</h1>
+      <h2>Custom Mechanical Keyboard 101 : An Introduction To The Hobby</h2>
+      <br></br>
+      <br>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/vjNfqAjR1nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br></br>
+    <div class="container">
+      <h3>This is how I lube my mechanical keyboard switch. With lubing the switch it will give a buttery feel when typing.
+      Its not just a hobby but it also can be business where 1 switch lubing can cost RM1.</h3>
+    </div>
+    <div class="title2">
+          <br></br>
+    <iframe width="560" height="315" src="keyboard2.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <div class="container2">
+      <h3>This is the sound of my custom mechanikal keyboard. The keyboard already been modded by me such as lubing the switch, changing the stabilizer, changing the plate, and many more's. I already spent around RM600 to build this custom keyboard. <a href="https://keyboard.university/" target="_blank" >You can Learn More Here!!</a> </h3>
+
+    </div>
+    <div class="title3">
+    <h1> Photo of my Keyboard :</h1>
+    </div>
+    <div class="gallery">
+
+    <a href="keyboardpic1.jpg" > <img src="keyboardpic1.jpg" ></a>
+    <a href="keyboardpic2.jpg" > <img src="keyboardpic2.jpg" ></a>
+  </div>
+  </header>
+
+</body>
+</html>

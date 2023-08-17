@@ -1,0 +1,270 @@
+<html>
+<head>
+<title> MY PORTFOLIO </title>
+<link rel ="stylesheet" type ="text/css" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type ="text/css" href ="styletime.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+        var IdealTimeOut = 60; //60 seconds
+        var idleSecondsTimer = null;
+        var idleSecondsCounter = 0;
+        document.onclick = function () { idleSecondsCounter = 0; };
+        document.onmousemove = function () { idleSecondsCounter = 0; };
+        document.onkeypress = function () { idleSecondsCounter = 0; };
+        document.onscroll = function () { idleSecondsCounter = 0; };
+        idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+ 
+        function CheckIdleTime() {
+            idleSecondsCounter++;
+            var oPanel = document.getElementById("timeOut");
+            if (oPanel) {
+                oPanel.innerHTML = (IdealTimeOut - idleSecondsCounter);
+            }
+            if (idleSecondsCounter >= IdealTimeOut) {
+                window.clearInterval(idleSecondsTimer);
+                alert("Your Session has expired. Please login again.");
+                window.location = "login1.php";
+                window.location = "index.html";
+            }
+        }
+        </script>
+<style>
+body {
+	background-color: lightgray;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.checked {
+  color: orange;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+</style>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<nav>
+	<div class ="main">
+      <a href="index1.html">
+      <img class ="logo" src="logo1.png">
+    </a>
+      <ul>
+        <li class="active"><a href = "index1.html">HOMEPAGE</a></li>
+        <li class="active"><a href = "about.html">ABOUT</a></li>
+        <li class="active"><a href = "resume.html">RESUME & ACHIEVEMENT</a></li>
+        <li class="active"><a href = "contact.html">CONTACT</a></li>
+        <li class="active"><a href = "hobby.html">HOBBY</a></li>
+        <li class="active"><a href = "restable.html">RESUME</a></li>
+        <li class="active"><a href = "timetable.html">TIME TABLE</a></li>
+        <li class="active"><a href = "logout.php">LOGOUT </a></li>
+      </ul>
+    </div>
+</nav>
+
+<body>
+	<div class="name">
+          <h1>Time Table</h1>
+          <table border="1" cellspacing="0" style="width:100%">
+            <tr>
+              <th>Day / Time</th>
+              <td>08:00 - 09:00</td> 
+              <td>09:00 - 10:00</td> 
+              <td>10:00 - 11:00</td> 
+              <td>11:00 - 12:00</td> 
+              <td>12:00 - 13:00</td> 
+              <td>13:00 - 14:00</td> 
+              <td>14:00 - 15:00</td> 
+              <td>15:00 - 16:00</td> 
+              <td>20:00 - 22:00</td>
+            </tr>
+            <tr>
+              <th>Monday</th>
+              <td><a href="#csc577">CSC577</a></td>
+              <td><a href="#csc577">CSC577</a></td> 
+              <td>  </td> 
+              <td><a href="#ctu554">CTU554</a></td>
+              <td><a href="#ctu554">CTU554</a></td>
+              <td> LUNCH </td>
+              <td><a href="#sta404">STA404</a></td>
+              <td><a href="#sta404">STA404</a></td>
+              <td>  </td>
+            </tr>
+
+            <tr>
+              <th>Tuesday</th>
+              <td><a href="#sta404">STA404</a></td>
+              <td><a href="#sta404">STA404</a></td>
+              <td>  </td> 
+              <td><a href="#csc508">CSC508</a></td>
+              <td><a href="#csc508">CSC508</a></td>
+              <td> LUNCH </td>
+              <td><a href="#csc574">CSC574</a></td>
+              <td><a href="#csc574">CSC574</a></td>
+              <td><a href="#tmc451">TMC451</a></td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td><a href="#csc569">CSC569</a></td>
+              <td><a href="#csc569">CSC569</a></td> 
+              <td>  </td> 
+              <td><a href="#csc574">CSC574</a></td>
+              <td><a href="#csc574">CSC574</a></td>
+              <td> LUNCH </td>
+              <td><a href="#elc650">ELC650</a></td>
+              <td><a href="#elc650">ELC650</a></td>
+              <td>  </td>
+            </tr>
+            <tr>
+              <th>Thursday</th>
+              <td>  </td>
+              <td><a href="#csc577">CSC577</a></td>
+              <td><a href="#csc577">CSC577</a></td>  
+              <td><a href="#csc569">CSC569</a></td>
+              <td><a href="#csc569">CSC569</a></td> 
+              <td> LUNCH </td>
+              <td><a href="#csc508">CSC508</a></td>
+              <td><a href="#csc508">CSC508</a></td>
+              <td>  </td>
+            </tr>
+          
+
+
+          </table>
+   </div>
+
+   <div class="about">
+    <h1> About UiTM and FSKM </h1>
+    <br><br>
+    <h2> What is UiTM ? </h2>
+    <br><br>
+    <p>UiTM is short for Universiti Teknologi MARA. It is Malaysia's largest institution of higher learning in terms of size and population. It has experienced phenomenal growth since its inception in 1956 and it is still growing.
+
+    Beside the main campus in Shah Alam, the university has expanded nationwide with 12 state campuses (out of which 7 are state autonomous campuses), 6 satellite campuses in Shah Alam, 11 state satellite campuses and 21 affiliated colleges. With this vast network and a workforce of 17,770, the university offers more than 500 academic programmes in a conducive and vibrant environment. It is also home to some 175,200 students. <a href= "https://www.uitm.edu.my/index.php/en/"> For more info click here </a></p>
+    <br><br>
+
+    <h2> What is FSKM ? </h2>
+    <br><br>
+    <p>he faculty was first established as the School of Actuarial Science, Statistics, Mathematics, Econometries and Cybernetics (ASMEC), in 1966 at the Institut Teknologi MARA (ITM) Jalan Othman campus, Petaling Jaya. Students with good background in Mathematics were offered either one of the two external programmes which prepared them for examinations by the Institute of Statisticians and the Institute of Actuaries, United Kingdom. The school believes that managers should have good mathematical and analytical skills. In 1969, the school took a bold step in introducing the Diploma in Computer Science, an internal programme. The school moved to a new and much bigger campus at Shah Alam in 1970. Soon after 1974 it was renamed the School of Mathematical Sciences and Computing. The external programmes were gradually replaced by the internal diploma programmes. Students had the opportunity to further their studies when the Advanced Diploma in Statistics was introduced in 1980, and also the offering of a joint degree programmes with Universiti Kebangsaan Malaysia in 1985. The awarded degree was known as BSc Computer Science (Hons) (ITM-UKM). In the 80's the country faced an increasing demand for computer science graduates. As a result, the school started to offer the Diploma in Computer Science programme in the Institute's Pahang, Perak and Terengganu branches in 1985 followed by Sarawak (2000) and Negeri Sembilan. The Diploma in Statistics and the Diploma in Quantitative Sciences were also introduced in Kelantan and Perak campuses, respectively, in 2003. The ITM Act was changed in 1996, allowing ITM to award its own degrees. Three of the advanced diploma programmes offered in the school was renamed as Bachelor of Science with honours in their respective fields.
+
+    In June that year, the school moved to a new building of its own within the Shah Alam campus. The new building provides improved computing and networking facilities for both the students and staff. Both the government and the industries saw greater importance and use of IT. In line with this development the school changed its name to Faculty of Information Technology and Quantitative Sciences in 1997. The faculty began to offer its programmes through franchised colleges. Two franchise programmes were offered, namely Certificate of Computer Programming and Diploma in Computer Science, in 1998. The faculty started its Masters and PhD programmes in 1999. The number of programmes at the Bachelor level also increased, the latest of which introduced was the Bachelor of Computer Science in Multimedia Computing (2007). MSc programmes offered are in Computer Science, Networking,Information Technology and Quantitative Sciences. There were 48 PhD candidates enrolled in the faculty as at July 2007.The student enrolment in the July 2007 semester was 3013 (Shah Alam only) and the number of academic staff was 299. To cater for the increasing number of students, the government had as early as 1996, approved an additional building. The faculty has started utilizing the new facilities since December 2006. <a href="https://fskm.uitm.edu.my/v5/index.php/en/"> For more info click here </a></p>
+    <br><br>
+    <br><br>
+
+  </div>
+   <div class = "link">
+    <h1 style ="text-align:center;" > Uitm Link </h1>
+    <br><br>
+    <h3 style ="text-align:center;">  This is image link to uitm page. </h3>
+    <a href="https://www.uitm.edu.my/index.php/en/">
+      <img class ="uitm" src="uitm.jpg">
+    </a>
+    <br>
+    <br>
+    <h3 style ="text-align:center;">  This is image link to Fskm page. </h3>
+    <br>
+    <a href="https://fskm.uitm.edu.my/v5/index.php/en/">
+      <img class ="fskm" src="fskm.png">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <h3 style ="text-align:center;">  This is image link to Student portal. </h3>
+        <br>
+    <a href="https://istudent.uitm.edu.my/index_isp.htm">
+      <img class ="portal" src="portal.jpg">
+    </a>
+  </div>
+
+  <div class="course">
+    <h1> About Courses For This Semester</h1>
+    <br><br>
+
+    <h2 id="csc508"> DATA STRUCTURES CSC508 </h2>
+    <br>
+    <p> Instructor Name : PROFESOR MADYA DR SURAYA BINTI MASROM</p>
+    <br>
+    <p> Course Description : This course introduces the concept of data structures, including lists, trees and graphs for improving computational performance. It emphasizes on abstract data types, their representations, and role as models in the development of computer algorithms such as searching and sorting. </p>
+
+    <br><br>
+
+    <h2 id="csc569"> PRINCIPLES OF COMPILERS CSC569 </h2>
+    <br>
+    <p> Instructor Name : SHAHIRAH BINTI MOHAMED HATIM</p>
+    <br>
+    <p> Course Description : The construction of a compiler involves three important phases. The lexical analysis phase deals with the identifying of lexeme items, the syntax analysis phase determines the underlying structure of the source program and the code generation phase produces the machine code. The syllabus covers from the evolution of program languages to the basics of a compiler: lexical analysis, syntax analysis, scanner and parser. </p>
+
+    <br><br>
+
+    <h2 id="csc574"> DYNAMIC WEB APPLICATION DEVELOPMENT CSC574 </h2>
+    <br>
+    <p> Instructor Name : SITI ROZANAE BT ISMAIL</p>
+    <br>
+    <p> Course Description : The course introduces the students to web programming. It covers, among others, mark-up language, client-side scripting and server-side scripting. </p>
+
+    <br><br>
+
+    <h2 id="csc577"> SOFTWARE ENGINEERING: THEORIES AND PRINCIPLES CSC577 </h2>
+    <br>
+    <p> Instructor Name : AHMAD FARID BIN NAJMUDDIN</p>
+    <br>
+    <p> This course introduces the theories and practices of Software Engineering, which includes software processes, requirement analysis, design, programming practices, verification and validation and software evolution for a large system. It also constructs a solid foundation for understanding and application of principles, techniques, technologies and tools in the development of a good software system. To help students understand these concepts, students will work in a team which lead a project flow through the entire software lifecycle. </p>
+
+    <br><br>
+
+    <h2 id="ctu554"> VALUES AND CIVILIZATION II CTU554 </h2>
+    <br>
+    <p> Instructor Name : SAIDI ADNAN BIN MD NOR</p>
+    <br>
+    <p> Kursus ini mempersiapkan pelajar untuk menghayati etika dan peradaban yang wujud dalam masyarakat kepelbagaian etnik di Malaysia untuk memperteguhkan pemikiran kritikal dan analitikal mereka bagi menangani kehidupan yang lebih mencabar. Pengisian kursus ini memfokuskan kepada penghayatan etika dan peradaban dalam acuan Malaysia. Pelajar akan didedahkan dengan dinamika konsep etika dan peradaban yang menjadi kekuatan kepada pembentukan negara Malaysia berdasarkan susur masa evolusi sejarahnya dari era pra-kolonial sehingga ke pasca-kolonial. Kefahaman tentang pembentukan etika dan peradaban dalam masyarakat kepelbagaian dibincangkan bagi meningkatkan penghayatan etika dan peradaban ke arah pemantapan kesepaduan nasional dan bangsa Malaysia. Peradaban acuan Malaysia perlu dikupas serta diperdebatkan dalam aktiviti akademik berpandukan Perlembagaan Persekutuan sebagai tapak integrasi dan wahana etika dan peradaban. Pembinaan kesepaduan nasional amat dipengaruhi oleh globalisasi dan perkembangan teknologi maklumat dan komunikasi yang kompleks. Oleh kerana itu, penghayatan etika dan peradaban menzahirkan perilaku tanggungjawab sosial dan digerakkan pada peringkat individu, keluarga, komuniti, masyarakat, dan negara. Justeru, perubahan yang berlaku dalam masyarakat dan pembangunan langsung ekonomi telah membawa cabaran baru dalam mengukuhkan kelestarian etika dan peradaban di Malaysia. Amalan Pendidikan Berimpak Tinggi (HIEPs) dipraktikkan dalam pengajaran dan pembelajaran bagi mendalami kursus ini. (pengajaran & pembelajaran).. </p>
+
+    <br><br>
+
+    <h2 id="elc650"> ENGLISH FOR PROFESSIONAL INTERACTION ELC650 </h2>
+    <br>
+    <p> Instructor Name : WAN NURUL FATIHAH BINTI WAN ISMAIL</p>
+    <br>
+    <p> This course is designed to equip students with interpersonal skills necessary to help them focus on their personal growth and development as professional individuals. By introducing students to language functions essential for developing interpersonal skills, the course is designed to help them to communicate and interact in the workplace. Specifically, students will be exposed to a wide range of language norms and conventions that are used daily to interact with individuals and groups in the workplace. This course aims to equip students with core communication skills for both interpersonal and workplace communication which include verbal and non-verbal communication skills, conversational skills, listening skills, clarifying skills and reflection skills. By introducing students to language functions essential for developing core communication skills, the course is designed to develop their interaction skills specifically in the areas of working in groups and teams, questioning and negotiating, problem solving and decision making in a wide range of professional tasks and interpersonal contexts. Overall, the focus is on developing students? interpersonal skills which will allow them to manage interactions with others in a positive manner. Students are encouraged to adopt a communicative approach when using the language. They are provided opportunities to observe and develop competency in interpersonal skills through activities like collaborative learning, role plays, group discussions, syndicates, fish bowl, video critiques, case studies, reflections and work-related simulations. </p>
+
+    <br><br>
+
+    <h2 id="sta404"> STATISTICS FOR BUSINESS AND SOCIAL SCIENCES STA404 </h2>
+    <br>
+    <p> Instructor Name : MOHAMMAD NASIR BIN ABDULLAH</p>
+    <br>
+    <p> This course introduces the students to the basic and intermediate methods of data analysis. It emphasis on the use of descriptive and inferential statistics including numerical descriptive, estimation, hypothesis testing, analysis of variance, chi-square test of independence and regression. Students will be exposed to analysis using statistical software, and interpretation of output. </p>
+
+    <br><br>
+
+    <h2 id="tmc451"> INTRODUCTORY MANDARIN (LEVEL II) TMC451 </h2>
+    <br>
+    <p> Instructor Name : LAM YAT CHAW</p>
+    <br>
+    <p> The Introductory Mandarin Language course is intended for students who have no background in Mandarin or any character-based language. This is the second of a three-level Mandarin Language programme designed specifically for UiTM Bachelor Degree students. The students will be taught appropriate basic level vocabulary and grammar. The course will emphasize greatly on developing participants oral communication skills in situational contexts through class activities such as role plays, simulations and other relevant oral tasks. Students are expected to take part in all language activities conducted in class to ensure success in attaining the elementary level proficiency. In this course, students will be introduced to the Hanyu Pinyin system. In addition, Chinese characters and Chinese culture will also be introduced in this course. </p>
+
+    <br><br>
+  </div>
+
+
+
+
+   
+
+</body>
+
+
+    </html>

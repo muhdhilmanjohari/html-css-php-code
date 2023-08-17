@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<title> MY PORTFOLIO </title>
+<link rel ="stylesheet" type ="text/css" href ="style1.css">
+<script type="text/javascript">
+        var IdealTimeOut = 60; //60 seconds
+        var idleSecondsTimer = null;
+        var idleSecondsCounter = 0;
+        document.onclick = function () { idleSecondsCounter = 0; };
+        document.onmousemove = function () { idleSecondsCounter = 0; };
+        document.onkeypress = function () { idleSecondsCounter = 0; };
+        document.onscroll = function () { idleSecondsCounter = 0; };
+        idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+ 
+        function CheckIdleTime() {
+            idleSecondsCounter++;
+            var oPanel = document.getElementById("timeOut");
+            if (oPanel) {
+                oPanel.innerHTML = (IdealTimeOut - idleSecondsCounter);
+            }
+            if (idleSecondsCounter >= IdealTimeOut) {
+                window.clearInterval(idleSecondsTimer);
+                alert("Your Session has expired. Please login again.");
+                window.location = "login1.php";
+                window.location = "index.html";
+            }
+        }
+        </script>
+<style>
+body {
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('pic1.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="autologout.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class ="main">
+      <a href="index1.html">
+      <img class ="logo" src="logo1.png">
+    </a>
+      <ul>
+        <li class="active"><a href = "index1.html">HOMEPAGE</a></li>
+        <li class="active"><a href = "about.html">ABOUT</a></li>
+        <li class="active"><a href = "resume.html">RESUME & ACHIEVEMENT</a></li>
+        <li class="active"><a href = "contact.html">CONTACT</a></li>
+        <li class="active"><a href = "hobby.html">HOBBY</a></li>
+        <li class="active"><a href = "restable.html">RESUME</a></li>
+        <li class="active"><a href = "timetable.html">TIME TABLE</a></li>
+        <li class="active"><a href = "logout.php">LOGOUT </a></li>
+      </ul>
+    </div>
+    <div class="title">
+      <h1>HILMAN JOHARI'S PORTFOLIO</h1>
+    </div>
+
+    <div class="button">
+      <a href="about.html"  class="btn">About Me</a>
+      <a href="restable.html"  class="btn">My Resume</a>
+  </header>
+
+</body>
+
+
+</html>
